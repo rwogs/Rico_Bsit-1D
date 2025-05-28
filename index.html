@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Foody - Delicious snacks and drinks at affordable prices">
+    <title>FOODY - Delicious Snacks & Drinks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo" aria-label="Foody">FOODY</div>
+            <div class="account-section">
+                <button class="account-toggle" aria-expanded="false" aria-controls="account-dropdown">
+                    Greece on Account <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="account-dropdown" id="account-dropdown">
+                    <form id="loginForm" aria-label="Login form">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="••••••••" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-password">Project Password</label>
+                            <input type="password" id="project-password" placeholder="••••••••" required>
+                        </div>
+                        <button type="submit" class="btn btn-login">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>hi there user!</h1>
+                    <p class="hero-subtext">hi we have a greate deals to you na sulit and busog snacks and meals so come and get it!</p>
+                    <p class="hero-description">Satisfy your cravings! We've got delicious and affordable snacks for you.</p>
+                    <a href="#menu" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <p class="about-text">Induge in a delightful selection of savory snacks and refreshing beverages. Experience the perfect blend of taste and value a truly suit and busog experience awaits for you. Visit us today!</p>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Meals and Desert</h2>
+                
+                <div class="menu-tabs" role="tablist">
+                    <button class="tab-btn active" data-tab="snacks" role="tab" aria-selected="true">Snacks</button>
+                    <button class="tab-btn" data-tab="drinks" role="tab" aria-selected="false">Drinks</button>
+                </div>
+                
+                <div class="menu-items">
+                    <!-- Items will be loaded by JavaScript -->
+                    <div class="loading-spinner"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title">hi there user!</h2>
+                <div class="featured-card">
+                    <div class="featured-content">
+                        <h3 class="featured-title">P 599 - 399 only</h3>
+                        <p class="featured-description">The dining experience began with delicate pastries and aromatic codes, a prelude to the main event: a flawlessly executed burger. The patty, cooked to perfection, was complemented by high-quality accompaniments, including crisp fries. A sophisticated and satisfying meal.</p>
+                        <button class="btn btn-order">Order Now</button>
+                    </div>
+                    <div class="featured-image">
+                        <img src="assets/images/featured-burger.jpg" alt="Delicious burger with fries" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">FOODY</div>
+                    <p class="footer-tagline">Order First And EasyWith Your Delivery Account</p>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 class="footer-heading">Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> Foody. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
